@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контакты</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul id="nav-list">
+                <li><a href="index.html"><i class="fas fa-home"></i> Главная</a></li>
+                <li><a href="about.html"><i class="fas fa-info-circle"></i> О нас</a></li>
+                <li><a href="contact.html"><i class="fas fa-envelope"></i> Контакты</a></li>
+            </ul>
+            <button id="nav-toggle"><i class="fas fa-bars"></i> Меню</button>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h1>Контакты</h1>
+            <form>
+                <label for="name"><i class="fas fa-user"></i> Имя:</label>
+                <input type="text" id="name" name="name">
+                <label for="email"><i class="fas fa-envelope"></i> Email:</label>
+                <input type="email" id="email" name="email">
+                <label for="message"><i class="fas fa-comment"></i> Сообщение:</label>
+                <textarea id="message" name="message"></textarea>
+                <button type="submit"><i class="fas fa-paper-plane"></i> Отправить</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024. Все права защищены.</p>
+    </footer>
+    <script src="scripts.js"></script>
+</body>
+</html>
