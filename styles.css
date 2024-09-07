@@ -77,6 +77,39 @@ video, img {
     margin: 0 auto 20px auto;
 }
 
+a, button {
+    transition: all 0.3s ease;
+}
+
+/* Hover effect for navigation links */
+nav ul li a:hover {
+    color: #ddd;
+    background-color: #444;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+
+/* Hover effect for buttons */
+button:hover {
+    transform: scale(1.05); /* Slightly enlarges the button */
+    background-color: #444; /* Change background color on hover */
+    color: #fff; /* Ensure text contrast */
+}
+
+
+/* Add smooth transitions to images and videos */
+video, img {
+    transition: transform 0.3s ease;
+}
+
+video:hover, img:hover {
+    transform: scale(1.05); /* Slightly zoom in on hover */
+}
+
+
+
+
 /* Адаптивность */
 @media (max-width: 768px) {
     nav ul {
@@ -89,9 +122,21 @@ video, img {
     }
 
     .hero {
-        height: auto;
-        padding: 50px 20px;
+        padding: 100px 20px; /* Set padding to create space around the content */
+        animation: fadeIn 2s ease; /* Add the fade-in animation */
+        text-align: center;
+        background-color: #f0f0f0; /* Optional: add a background color instead of an image */
     }
+    
+    .hero h1 {
+        font-size: 3em;
+    }
+    
+    .hero p {
+        font-size: 1.2em;
+        color: #666;
+    }
+    
 }
 
 @media (max-width: 480px) {
